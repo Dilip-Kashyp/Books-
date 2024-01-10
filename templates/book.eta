@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO</title>
+  </head>
+  <body>
+    <form method="POST" action="/books/<%= it.todo.id %>">
+      <label for="todo">Book name:</label>
+      <input type="text" id="todo" name="todo"  value="<%= it.todo.todo %>"/><br/>
+
+      <label for="page">Number of pages:</label>
+      <input type="number" id="page" name="page" value="<%= it.todo.page %>" /><br/>
+
+      <label for="isbn">ISBN:</label>
+      <input type="text" id="isbn" name="isbn" value="<%= it.todo.isbn %>"/><br/>
+
+      <input type="submit" value="Update" />
+    </form>
+    
+    <p><a href="/books">Back to books</a></p>
+  </body>
+</html>
